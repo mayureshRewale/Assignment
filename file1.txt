@@ -1,0 +1,37 @@
+mkdir Assignment
+cd Assignment
+git init
+notepad demo.txt
+notepad file1.txt
+notepad file2.txt
+notepad file3.txt
+git status
+git add demo.txt
+git commit -m "demo file commit from master"
+git checkout -b Dev
+git add file1.txt
+git commit -m "committed from Dev"
+git log
+git switch master
+git checkout -b Test
+git add file2.txt
+git add file3.txt
+git checkout -b "committed from Test"
+git log
+git switch Dev
+notepad file1.txt
+git diff
+git status
+git add file1.txt
+git commit -m "Modified file from Dev"
+git switch master
+git merge Dev
+git merge Test
+git log
+git remote add origin h......
+git push -u origin master
+mkdir Clone
+cd Clone
+git clone https://...
+cd GitAssignment
+notepad solution.txt
